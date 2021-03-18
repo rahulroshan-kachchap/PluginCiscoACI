@@ -25,10 +25,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Compilation
       run: |
-         export ODIMRA_USER_ID=2021; export ODIMRA_GROUP_ID=2021
-         ls -lrt
-         pwd
-         ./build_images.sh.
+         export ODIMRA_USER_ID=2021; export ODIMRA_GROUP_ID=2021;./build_images.sh.
          if [ $? eq 0 ]; 
          then
           echo "PluginCiscoACI build is successful"
