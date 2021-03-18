@@ -27,7 +27,7 @@ jobs:
       run: |
          export ODIMRA_USER_ID=2021; export ODIMRA_GROUP_ID=2021
          ./build_images.sh
-         if [ $? eq 0 ]; 
+         if [ $? -eq 0 ]; 
          then
           echo "PluginCiscoACI build is successful"
          else
