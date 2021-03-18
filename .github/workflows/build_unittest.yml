@@ -36,7 +36,7 @@ jobs:
          fi
     - name: Test
       run: |
-        GORACE=history_size=7 go test ./... --cover
+        go test ./... --cover
         if [ $? -eq 0 ]; then
               echo Unit Testing is Successful !!!!
         else
